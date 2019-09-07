@@ -1,10 +1,13 @@
+* [Как начать Git](git_quick_start.md)
+* [Как начать Vagrant](vagrant_quick_start.md)
+
 ############# RAID 10 на 6 дисках ######################################
 
 ## Vagrantfile
 
 Добавляем еще 2 диска, чтобы было 6 для создания RAID
 
-		:sata5 => {
+	:sata5 => {
             :dfile => './sata5.vdi',
             :size => 250,
             :port => 5
@@ -108,15 +111,15 @@ for i in $(seq 1 5); do mount /dev/md0p$i /raid/part$i; done
 
 ############################################################
 
-Скрипт [raid10.sh] (./raid10.sh) для автоматического создания RAID по большей части копирует предыдущие операции
+* Скрипт [raid10.sh] (raid10.sh) для автоматического создания RAID по большей части копирует предыдущие операции
 
 Правим Vagrantfile, для указания ссылки на файл добавляем 
 
 box.vm.provision "shell", path: "./raid10.sh"
 
 
-Файл конфигурации [mdadm.conf] (./mdadm.conf)
-Файл [Vagrantfile] (./Vagrantfile)
+* Файл конфигурации [mdadm.conf] (./mdadm.conf)
+* Файл [Vagrantfile] (./Vagrantfile)
 
 
 
