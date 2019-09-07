@@ -116,6 +116,7 @@ box.vm.provision "shell", path: "./raid10.sh"
 
 
 Файл конфигурации [mdadm.conf](mdadm.conf)
+
 Файл [Vagrantfile](Vagrantfile)
 
 
