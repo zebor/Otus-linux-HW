@@ -1,4 +1,4 @@
-* [Как начать Git](git_quick_start.md)
+* [Как начать Git](mdadm.conf)
 * [Как начать Vagrant](vagrant_quick_start.md)
 
 ############# RAID 10 на 6 дисках ######################################
